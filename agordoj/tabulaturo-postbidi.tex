@@ -1,0 +1,48 @@
+\pgfdeclarepatternformonly{diagolines}%
+   {\pgfqpoint{-1pt}{-1pt}}%
+   {\pgfqpoint{10pt}{10pt}}%
+   {\pgfqpoint{2pt}{2pt}}%
+   {
+     \pgfsetlinewidth{0.8pt}
+     \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+     \pgfpathlineto{\pgfqpoint{2.1pt}{2.1pt}}
+     \pgfusepath{stroke}
+    }
+
+\renewcommand{\c  }{\presuokarinon{fill}{fill}{fill}{fill}{0}}
+  \newcommand{\cis}{\presuokarinon{pattern=diagolines, pattern color = black!25}{fill}{fill}{fill}{0}}
+\renewcommand{\d  }{\presuokarinon{    }{fill}{fill}{fill}{0}}
+  \newcommand{\dis}{\presuokarinon{fill}{pattern=diagolines, pattern color = black!25}{fill}{fill}{0}}
+  \newcommand{\e  }{\presuokarinon{fill}{    }{fill}{fill}{0}}
+  \newcommand{\f  }{\presuokarinon{    }{    }{fill}{fill}{0}}
+  \newcommand{\fis}{\presuokarinon{fill}{fill}{    }{fill}{0}}
+  \newcommand{\g  }{\presuokarinon{    }{fill}{    }{fill}{0}}
+  \newcommand{\gis}{\presuokarinon{fill}{    }{    }{fill}{0}}
+\renewcommand{\a  }{\presuokarinon{    }{    }{    }{fill}{0}}
+  \newcommand{\ais}{\presuokarinon{    }{fill}{    }{    }{0}}
+\renewcommand{\b  }{\presuokarinon{fill}{    }{    }{    }{0}}
+  \newcommand{\C  }{\presuokarinon{    }{    }{    }{    }{0}}
+\renewcommand{\B  }{\presuokarinon{fill}{fill}{fill}{fill}{1}}
+\newcommand{\des}{\cis}
+\newcommand{\ees}{\dis}
+\newcommand{\aes}{\gis}
+\newcommand{\bes}{\ais}
+\newcommand{\z}{\presulongan}
+\newcommand{\w}{\presupauxzon}
+\newcommand{\x}{\presutaktstrekon{0}{0}{0}}
+\newcommand{\X}{\presutaktstrekon{0}{0}{1}}
+\renewcommand{\r}[2]{\presutaktstrekon{#1}{#2}{0}}
+\newcommand{\R}[2]{\presutaktstrekon{#1}{#2}{1}}
+\newcommand{\alt}[1]{{#1}}
+\newcommand{\takto}[3]{\mbox{\parbox[t]{1em}{\presualternativon{#1}}#2\parbox[t]{3mm}{#3}}}
+\newcommand{\reludu}{\raisebox{0.5\baselineskip}{\symbolglyph{\huge\textcolor{gray}{⟲}}}}
+\NewEnviron{tabulaturo}{
+	\begin{samepage}
+		\begin{LTR}
+			\setlength\parskip{\fill}
+			\setlength{\parindent}{0cm} % Default is 15pt.
+			\BODY
+		\end{LTR}
+	\end{samepage}
+}
+\newcommand{\enliniatabulaturo}[1]{\raisebox{-0.10\baselineskip}{\scalebox{0.5}{#1}}}

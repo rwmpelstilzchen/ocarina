@@ -1,0 +1,16 @@
+\usepackage{polyglossia}
+\setmonofont[Mapping=tex-text, Scale=0.9]{PragmataPro}
+\setmainlanguage{hebrew}
+\newfontfamily\hebrewfont[Script=Hebrew, ItalicFont={Days-Nights}, ItalicFeatures={Scale=1.0}]{Rutz_OE}
+\let\hebrewfonttt\ttfamily
+\setotherlanguage{esperanto}
+\setotherlanguage{latin}
+\newfontfamily\esperantofont{Vesper Pro}
+\newfontfamily\latinfont{Vesper Pro}
+\newfontfamily\japanesefont[Script=CJK, Language=Japanese]{IPAMincho}
+\newcommand{\EO}[1]{\textesperanto{\LR{#1}}}
+\newcommand{\Lat}[1]{\textlatin{\LR{#1}}}
+\newcommand{\Heb}[1]{\texthebrew{\RL{#1}}}
+\newcommand{\Jap}[1]{{\japanesefont\LR{#1}}}
+
+\newcommand{\symbolglyph}[1]{{\fontspec{Symbola}#1}}

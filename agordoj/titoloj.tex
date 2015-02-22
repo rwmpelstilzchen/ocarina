@@ -1,0 +1,19 @@
+\makeatletter
+\define@key{muzikajxo}{titolo-he}{\def\titolohe{#1}}
+\define@key{muzikajxo}{titolo-eo}{\def\titoloeo{#1}}
+\define@key{muzikajxo}{titolo-xx}{\def\titoloxx{#1}}
+\define@key{muzikajxo}{ikono}{\def\ikono{#1}}
+\define@key{muzikajxo}{komponisto-he}{\def\komponistohe{#1}}
+\define@key{muzikajxo}{komponisto-eo}{\def\komponistoeo{#1}}
+\define@key{muzikajxo}{komponisto-xx}{\def\komponistoxx{#1}}
+\setkeys{muzikajxo}{titolo-eo={}, titolo-he={}, titolo-xx={}, ikono={}, komponisto-he={}, komponisto-eo={}, komponisto-xx={}}
+%\def\muzikajxo{\@ifnextchar[\@muzikajxo{\@muzikajxo[]}}
+\makeatother
+
+\newcommand\muzikajxo[2][]{%
+  \setkeys{muzikajxo}{#1}
+  \clearpage
+  \noindent
+  {\textbf{\titolohe} \hfill \LR{\symbolglyph{\ikono} \Lat{{\titoloxx}}} \hfill \EO{\textbf{\titoloeo}}}\\
+  {{\komponistohe} \hfill ~ \hfill \EO{{\komponistoeo}}}\\
+}
