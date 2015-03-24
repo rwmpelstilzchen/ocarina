@@ -1,5 +1,6 @@
 .elprovo/
 kovrilo/
+*.ent
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
