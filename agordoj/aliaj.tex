@@ -1,11 +1,10 @@
-\usepackage{ifthen, environ, xkeyval, setspace, paralist, hyperref, marginnote, multicol, etoolbox, wrapfig}
+\usepackage{ifthen, environ, xkeyval, setspace, paralist, hyperref, marginnote, multicol, etoolbox, wrapfig, emptypage}
 
 \onehalfspacing
 \setlength\parskip{\smallskipamount}
 \setlength\parindent{0pt}
 
 \newcommand{\middlebox}[1]{$\vcenter{\hbox{#1}}$}
-
 
 \usepackage{tikz}
 \usetikzlibrary{shapes, positioning}
@@ -28,3 +27,13 @@
 \newcommand{\pnurlref}[1]{\enmark{\ref{url:#1}}}
 \renewcommand{\makeenmark}{\enmark{\theenmark}}
 %\usepackage{footnote}
+
+\newcommand{\dulingvaujo}[2]{%
+	\parbox[t]{0.46\textwidth}{\noindent\RL{#1}}\hfill
+	\parbox[t]{0.50\textwidth}{\begin{LTR}\EO{#2}\end{LTR}}
+}
+
+%\newcommand{\apartigilo}{{\vspace{-2em}\begin{center}\Huge\fontspec{Bodoni Ornaments ITC TT}\end{center}\vspace{-2em}}}
+\newcommand{\apartigilo}{{\color{gray}\hrule}}
+
+\newcommand{\hl}[1]{\textbf{#1}}
